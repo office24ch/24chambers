@@ -1,0 +1,124 @@
+section.disclaimer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  transform: translateX(0);
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  z-index: 999;
+}
+
+section.disclaimer.hide {
+  transform: translateX(-150vw);
+}
+
+.disclaimer_wrapper {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--off-white);
+  text-align: justify;
+}
+
+.disclaimer_title {
+  font-size: 2rem;
+  line-height: 2rem;
+  opacity: 0.8;
+}
+
+.disclaimer_info {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 80%;
+  overflow-y: scroll;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--main-blue);
+  border-radius: 0.25rem;
+}
+
+.disclaimer_info p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.disclaimer_info .list_items ul {
+  padding-left: 1rem;
+}
+
+.disclaimer_info .list_items li {
+  margin: 0.25rem 0;
+}
+
+.disclaimer_button button {
+  outline: none;
+  border: none;
+  width: 150px;
+  padding: 0.75rem 0;
+  border-radius: 0.25rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 1px var(--main-gold);
+  color: var(--off-white);
+  transition: all 0.3s ease-in-out;
+}
+
+.disclaimer_button button {
+  background-color: var(--main-blue);
+}
+
+.disclaimer_button button:hover {
+  transform: translateY(-3px);
+}
+
+/* responsive design for mobile devices */
+@media screen and (max-width: 769px) {
+  .disclaimer_wrapper {
+    padding: 1rem 1rem 10vh 1rem;
+    gap: 1.5rem;
+  }
+
+  .disclaimer_title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .disclaimer_info {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .disclaimer_info p {
+    font-size: 0.9rem;
+  }
+
+  .disclaimer_info .list_items li {
+    position: relative;
+    font-size: 0.9rem;
+  }
+
+  .disclaimer_button {
+    gap: 1rem;
+  }
+
+  .disclaimer_button button {
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+  }
+}

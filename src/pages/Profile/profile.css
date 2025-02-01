@@ -1,0 +1,187 @@
+.profile {
+  height: 100%;
+  width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 2rem;
+}
+
+.profile main {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.profile_top {
+  width: 100%;
+  height: 45vh;
+  background-color: #f3f3f3;
+  border: 1px solid #f3f3f3;
+}
+
+.profile_top .profile_top_wrapper {
+  max-width: 1020px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.profile_image img {
+  height: 45vh;
+  object-fit: contain;
+}
+
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile_top .profile_name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.profile_top .profile_title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.profile_contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.profile_phone,
+.profile_email {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile_linkedin {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  background-color: #0077b5;
+  color: var(--off-white);
+  cursor: pointer;
+}
+
+.profile_expertise span,
+.profile_special span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.profile_expertise,
+.profile_special {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.profile_bottom {
+  max-width: 1020px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+}
+
+.profile_bottom .profile_details {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: justify;
+}
+
+.profile_bottom .profile_memebership ol {
+  padding-left: 2rem;
+}
+/* Responsive UI for smaller screen */
+@media screen and (max-width: 769px) {
+  .profile {
+    margin-top: 10vh;
+  }
+
+  .profile main {
+    gap: 1rem;
+  }
+
+  .profile_top {
+    height: max-content;
+  }
+
+  .profile_top .profile_top_wrapper {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  .profile_top img {
+    height: 35vh;
+  }
+
+  .profile_info {
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .profile_top .profile_name_title {
+    text-align: center;
+  }
+
+  .profile_top .profile_name {
+    font-size: 1.25rem;
+  }
+
+  .profile_top .profile_title {
+    font-size: 1rem;
+  }
+
+  .profile_contact {
+    font-size: 1rem;
+    gap: 0 2rem;
+  }
+
+  .profile_linkedin {
+    height: 30px;
+    width: 30px;
+  }
+
+  .profile_expertise,
+  .profile_special {
+    display: block;
+    font-size: 1rem;
+  }
+
+  .profile_expertise span,
+  .profile_special span {
+    font-size: 1rem;
+  }
+
+  .profile_bottom {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .profile_bottom h3 {
+    font-size: 1.1rem;
+  }
+}

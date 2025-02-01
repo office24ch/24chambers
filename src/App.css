@@ -1,0 +1,57 @@
+/* root level css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-blue: #222d4b;
+  --main-blue-light: #334066;
+  --main-gold: #c29a70;
+  --main-gold-dark: #936e43;
+  --white: #ffffff;
+
+  --off-white: #fafafa;
+  --off-white-light: #f0f0f0;
+  --off-white-dark: #f3f3f3;
+}
+
+.app_container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* section level common css */
+section {
+  padding: 0 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section main {
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Responsive UI for smaller screen */
+@media screen and (max-width: 769px) {
+  section main {
+    gap: 1rem;
+  }
+}

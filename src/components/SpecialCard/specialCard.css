@@ -1,0 +1,73 @@
+.specialCard {
+  min-height: 275px;
+  height: max-content;
+  width: 350px;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background-color: #f3f3f3;
+  color: var(--main-blue);
+  overflow: hidden;
+}
+
+.specialCard .specialCard_icon_title {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: var(--main-blue-light);
+  color: var(--off-white);
+}
+
+.specialCard .specialCard_icon_title h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.specialCard .specialCard_icon_title i {
+  padding: 0.5rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-gold);
+  box-shadow: 0 0 10px rgba(194, 154, 112, 0.3);
+  border-radius: 0.25rem;
+}
+
+.specialCard .specialCard_subtitle {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: justify;
+}
+
+/* Responsive UI for smaller screen */
+@media screen and (max-width: 426px) {
+  .specialCard {
+    min-height: 220px;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .specialCard .specialCard_icon_title {
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .specialCard .specialCard_icon_title h3 {
+    font-size: 1.25rem;
+  }
+
+  .specialCard .specialCard_icon_title i {
+    font-size: 1.5rem;
+  }
+
+  .specialCard .specialCard_subtitle {
+    font-size: 1rem;
+    padding-top: 0;
+    text-align: justify;
+  }
+}

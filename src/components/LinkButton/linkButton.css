@@ -1,0 +1,30 @@
+.linkButton {
+  padding: 0.75rem 2rem;
+  background-color: var(--off-white);
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.linkButton a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--main-blue);
+}
+
+.linkButton.dark {
+  background-color: var(--main-blue);
+}
+
+.linkButton.dark a {
+  color: var(--off-white);
+}
+
+.linkButton a i {
+  margin-left: 0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.linkButton a:hover i {
+  transform: translateX(10px);
+}
