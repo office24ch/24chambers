@@ -53,7 +53,7 @@ const Header = () => {
           <span className="link_separator"></span>
 
           <span>
-            <Link to="/blogs">Blog & Published Works</Link>
+            <Link to="/blogs">Blog and Published Works</Link>
           </span>
           <span className="link_separator"></span>
 
